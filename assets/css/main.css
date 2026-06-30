@@ -3933,11 +3933,19 @@
 
 /* Presentation videos */
 
-.video-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(450px,1fr));
-    gap:2.5rem;
-    margin-top:2rem;
+.video-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 620px));
+    justify-content: center;
+    gap: 2rem;
+}
+
+.video-card iframe {
+    width: 88%;
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
 }
 
 .video-item{
